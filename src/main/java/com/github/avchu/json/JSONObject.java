@@ -1530,7 +1530,7 @@ public class JSONObject {
      */
     public JSONObject putOnce(String key, Object value) throws JSONException {
         if (key != null && value != null) {
-            if (this.opt(key) != null) {
+            if (!this.opt(key).isPresent()) {
                 throw new JSONException("Duplicate key \"" + key + "\"");
             }
             this.put(key, value);
