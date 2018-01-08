@@ -1332,7 +1332,7 @@ public class JSONObject {
         if (this.opt(key).isPresent()) {
             return Optional.of((String) this.opt(key).get());
         }
-        return Optional.of(defaultValue);
+        return Optional.ofNullable(defaultValue);
     }
 
     /**
