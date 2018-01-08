@@ -495,11 +495,11 @@ public class JSONObject {
         if (key == null) {
             throw new JSONException("Null key.");
         }
-        Object object = this.opt(key);
-        if (object == null) {
+        Optional<Object> opt = this.opt(key);
+        if (opt.isPresent()) {
             throw new JSONException("JSONObject[" + quote(key) + "] not found.");
         }
-        return object;
+        return opt.get();
     }
 
     /**
