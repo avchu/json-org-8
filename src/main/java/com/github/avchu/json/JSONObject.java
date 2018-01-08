@@ -496,7 +496,7 @@ public class JSONObject {
             throw new JSONException("Null key.");
         }
         Optional<Object> opt = this.opt(key);
-        if (opt.isPresent()) {
+        if (!opt.isPresent()) {
             throw new JSONException("JSONObject[" + quote(key) + "] not found.");
         }
         return opt.get();
