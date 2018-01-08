@@ -376,9 +376,13 @@ public class JSONObject {
                 JSONObject target = this;
                 for (int i = 0; i < last; i += 1) {
                     String segment = path[i];
-                    JSONObject nextTarget = target.optJSONObject(segment).orElse(new JSONObject());
-                    target.put(segment, nextTarget);
-                    target = nextTarget;
+                    if (target.optJSONObject(segment).isPresent()) {
+                        target = target.optJSONObject(segment).get();
+                    } else {
+                        JSONObject nextTarget = new JSONObject();
+                        target.put(segment, nextTarget);
+                    }
+
                 }
                 target.put(path[last], bundle.getString((String) key));
             }
