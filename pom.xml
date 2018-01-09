@@ -9,6 +9,11 @@
     <packaging>jar</packaging>
 
     <name>json</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>8</java.version>
+    </properties>
     <description>JSON org implementation with real Optional</description>
     <build>
         <plugins>

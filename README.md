@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/avchu/json-org-8.svg)](https://jitpack.io/#avchu/json-org-8) [![Build Status](https://travis-ci.org/avchu/json-org-8.svg?branch=master)](https://travis-ci.org/avchu/json-org-8)
+[![](https://jitpack.io/v/avchu/json-org-8.svg)](https://jitpack.io/#avchu/json-org-8) [![Build Status](https://travis-ci.org/avchu/json-org-8.svg?branch=master)](https://travis-ci.org/avchu/json-org-8) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/05f2789051214f8b8300103e3298a482)](https://www.codacy.com/app/avchu/json-org-8?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=avchu/json-org-8&amp;utm_campaign=Badge_Grade)  [![Coverage Status](https://coveralls.io/repos/github/avchu/json-org-8/badge.svg?branch=master)](https://coveralls.io/github/avchu/json-org-8?branch=master)
 
 # json-org-8
 JSON org implementation with real Optional from java 8.
